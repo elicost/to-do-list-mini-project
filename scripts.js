@@ -5,6 +5,13 @@ function newItem(){
     let inputValue = $('#input').val();
     li.append(inputValue);
 
+//Warning user about blank input field:
+    if (inputValue === '') {
+        alert("This field cannot be left blank!");
+    } else {
+        $('#list').append(li);
+    }
+
 
 //javascript
 //1. Adding a new item to the list of items: 
@@ -13,12 +20,12 @@ function newItem(){
 //    let text = document.createTextNode(inputValue);
 //    li.appendChild(text);
 
-   if (inputValue === '') {
-     alert("You must write something!");
-   } else {
-     let list = document.querySelector('#list');
-     list.appendChild(li);
-   }
+//    if (inputValue === '') {
+//      alert("You must write something!");
+//    } else {
+//      let list = document.querySelector('#list');
+//      list.appendChild(li);
+//    }
 
  //2. Crossing out an item from the list of items:
    function crossOut() {
