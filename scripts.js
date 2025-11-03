@@ -21,6 +21,11 @@ function newItem(){
 		  li.toggleClass("strike");
 	  })
 
+//Adding "X" button for deletion of items:
+    let crosOutButton = $('<crossOutButton></crossOutButton>');
+    crossOutButton.append(document.createTextNode('X'));
+    li.append(crossOutButton);
+
 //javascript
 //1. Adding a new item to the list of items: 
 //    let li = document.createElement("li");
