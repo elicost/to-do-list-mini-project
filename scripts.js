@@ -26,6 +26,12 @@ function newItem(){
     crossOutButton.append(document.createTextNode('X'));
     li.append(crossOutButton);
 
+//Making "X" button functional:
+    crossOutButton.on("click", deleteListItem);
+    function deleteListItem(){
+      li.addClass("delete?");
+    }
+
 //javascript
 //1. Adding a new item to the list of items: 
 //    let li = document.createElement("li");
