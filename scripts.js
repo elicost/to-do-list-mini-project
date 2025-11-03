@@ -13,7 +13,13 @@ function newItem(){
     }
 
 //Allowing user to cross out item from list:
-    $("ul li").on("dblclick", crossOut);
+    function crossOut() {
+		  li.toggleClass("strike");
+	  }
+    
+    li.on("dblclick", function crossOut() {
+		  li.toggleClass("strike");
+	  })
 
 //javascript
 //1. Adding a new item to the list of items: 
@@ -29,12 +35,12 @@ function newItem(){
 //      list.appendChild(li);
 //    }
 
- //2. Crossing out an item from the list of items:
-   function crossOut() {
- 		li.classList.toggle("strike");
- 	}
+//  //2. Crossing out an item from the list of items:
+//    function crossOut() {
+//  		li.classList.toggle("strike");
+//  	}
 
- 	li.addEventListener("dblclick",crossOut);
+//  	li.addEventListener("dblclick",crossOut);
 
  //3(i). Adding the delete button "X": 
    let crossOutButton = document.createElement("crossOutButton");
