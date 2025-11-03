@@ -22,7 +22,7 @@ function newItem(){
 	  })
 
 //Adding "X" button for deletion of items:
-    let crosOutButton = $('<crossOutButton></crossOutButton>');
+    let crossOutButton = $('<crossOutButton></crossOutButton>');
     crossOutButton.append(document.createTextNode('X'));
     li.append(crossOutButton);
 
