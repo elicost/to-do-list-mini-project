@@ -13,7 +13,7 @@ function newItem(){
     }
 
 //Allowing user to cross out item from list:
-    $("ul li").on("click", crossOut);
+    $("ul li").on("dblclick", crossOut);
 
 //javascript
 //1. Adding a new item to the list of items: 
