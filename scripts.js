@@ -29,7 +29,7 @@ function newItem(){
 //Making "X" button functional:
     crossOutButton.on("click", deleteListItem);
     function deleteListItem(){
-      li.addClass("delete?");
+      li.addClass("delete");
     }
 
 //javascript
