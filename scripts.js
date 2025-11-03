@@ -32,6 +32,15 @@ function newItem(){
       li.addClass("delete");
     }
 
+//Enabling "drag-to-reorder" functionality:
+    $('#list').sortable();
+
+  }
+
+
+
+
+  
 //javascript
 //1. Adding a new item to the list of items: 
 //    let li = document.createElement("li");
@@ -64,9 +73,9 @@ function newItem(){
 //  		li.classList.add("delete")
 //  	}
  // 4. Reordering the items: 
-   $('#list').sortable();
+//    $('#list').sortable();
 
-}
+// }
 
  
 
